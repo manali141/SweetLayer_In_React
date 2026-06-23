@@ -18,7 +18,7 @@ function Hero() {
         </p>
 
         <div className="buttons">
-          <Link to="/cakes" className="btn primary">
+          <Link to="/Menu" className="btn primary">
             View Cakes
           </Link>
 
