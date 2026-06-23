@@ -28,17 +28,7 @@ const Header = () => {
             </Link>
           </li>
 
-          <li>
-            <Link to="/create-cake" className="nav-link">
-              Create Cake
-            </Link>
-          </li>
-
-          <li>
-            <Link to="/profile" className="nav-link">
-              Profile
-            </Link>
-          </li>
+          
         </ul>
 
       </nav>

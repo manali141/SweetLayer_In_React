@@ -53,47 +53,40 @@ function MyOrders() {
   });
 
   return (
-    <div className="container">
-      <h1>My Orders</h1>
+  <div className="orders-page">
+    <h1 className="page-title">My Orders</h1>
 
-      {/* FILTER BUTTONS */}
-      <div style={{ marginBottom: "20px" }}>
-        <button onClick={() => setFilter("all")}>
-          All
-        </button>
+    {/* FILTER BUTTONS */}
+    <div className="filter-bar">
+      <button onClick={() => setFilter("all")}>All</button>
+      <button onClick={() => setFilter("confirmed")}>Confirmed</button>
+      <button onClick={() => setFilter("cancelled")}>Cancelled</button>
+    </div>
 
-        <button onClick={() => setFilter("confirmed")}>
-          Confirmed
-        </button>
+    {/* ORDERS LIST */}
+    {filteredOrders.length === 0 && (
+      <p className="empty-text">No orders found</p>
+    )}
 
-        <button onClick={() => setFilter("cancelled")}>
-          Cancelled
-        </button>
-      </div>
-
-      {/* ORDERS LIST */}
-      {filteredOrders.length === 0 && (
-        <p>No orders found</p>
-      )}
-
+    <div className="orders-grid">
       {filteredOrders.map((order) => (
-        <div
-          key={order.id}
-          style={{
-            border: "1px solid #ccc",
-            padding: "10px",
-            marginBottom: "10px"
-          }}
-        >
+        <div key={order.id} className="order-card">
           <h3>{order.cakeTitle}</h3>
-          <p>Quantity: {order.quantity}</p>
-          <p>Status: {order.status}</p>
+
+          <div className="order-info">
+            <p><span>Quantity:</span> {order.quantity}</p>
+            <p>
+              <span>Status:</span>{" "}
+              <span className={`status ${order.status}`}>
+                {order.status}
+              </span>
+            </p>
+          </div>
 
           {order.status !== "cancelled" && (
             <button
-              onClick={() =>
-                mutation.mutate(order.id)
-              }
+              className="cancel-btn"
+              onClick={() => mutation.mutate(order.id)}
             >
               Cancel Order
             </button>
@@ -101,7 +94,8 @@ function MyOrders() {
         </div>
       ))}
     </div>
-  );
+  </div>
+);
 }
 
 export default MyOrders;

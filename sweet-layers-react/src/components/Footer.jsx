@@ -17,7 +17,7 @@ function Footer() {
           <div className="footerMenu">
             <a href="/" className="nav-link">Home</a>
             <a href="/Menu" className="nav-link">Cakes</a>
-            <a href="/my-orders" className="nav-link">Orders</a>
+            <a href="/my-orders" className="nav-link">My Orders</a>
           </div>
 
         </div>
