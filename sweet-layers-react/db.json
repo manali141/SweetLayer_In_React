@@ -1,0 +1,143 @@
+{
+  "cakes": [
+    {
+      "id": "1",
+      "title": "Classic Elegance",
+      "description": "A stunning vanilla bean cake with soft buttercream and fresh roses.",
+      "category": "Wedding",
+      "price": 120,
+      "image": "https://www.themealdb.com/images/media/meals/xqrwyr1511133646.jpg",
+      "flavor": "Vanilla",
+      "rating": 4.8,
+      "altText": "Birthday Cake with Classic Elegance",
+      "isFeatured": true,
+      "likes": 0
+    },
+    {
+      "id": "2",
+      "title": "Chocolate Dream",
+      "description": "Rich chocolate cake layered with dark chocolate ganache.",
+      "category": "Birthday",
+      "price": 80,
+      "image": "https://www.themealdb.com/images/media/meals/wxyvqq1511723401.jpg",
+      "flavor": "Chocolate",
+      "rating": 4.7,
+      "altText": "Birthday Cake with chocolate layer",
+      "isFeatured": true,
+      "likes": 0
+    },
+    {
+      "id": "3",
+      "title": "Strawberry Delight",
+      "description": "Light sponge cake with fresh strawberries and whipped cream.",
+      "category": "Anniversary",
+      "price": 95,
+      "image": "https://www.themealdb.com/images/media/meals/urtqut1511723591.jpg",
+      "flavor": "Strawberry",
+      "rating": 4.6,
+      "altText": "Birthday Cake with Strawberry delight",
+      "isFeatured": false,
+      "likes": 0
+    },
+    {
+      "id": "4",
+      "title": "Red Velvet Love",
+      "description": "Moist red velvet cake with cream cheese frosting.",
+      "category": "Special",
+      "price": 110,
+      "image": "https://www.themealdb.com/images/media/meals/ldnrm91576791881.jpg",
+      "flavor": "Red Velvet",
+      "rating": 4.9,
+      "altText": "Birthday Cake with Red Velvet Love",
+      "isFeatured": true,
+      "likes": 0
+    },
+    {
+      "id": "5",
+      "title": "Black Forest",
+      "description": "Chocolate sponge with cherries and whipped cream layers.",
+      "category": "Cupcakes",
+      "price": 90,
+      "image": "https://www.themealdb.com/images/media/meals/qxutws1486978099.jpg",
+      "flavor": "Chocolate Cherry",
+      "rating": 4.5,
+      "altText": "Birthday Cake with Black Forest",
+      "isFeatured": false,
+      "likes": 0
+    },
+    {
+      "id": "6",
+      "title": "Vanilla Bean Cloud",
+      "description": "Classic Madagascar vanilla bean cupcakes with a fluffy buttercream swirl.",
+      "category": "Cupcakes",
+      "price": 50,
+      "image": "https://www.themealdb.com/images/media/meals/xlqqhw1764369924.jpg",
+      "flavor": "Vanilla",
+      "rating": 4.5,
+      "altText": "Birthday Cake with Vanilla Bean Cloud",
+      "isFeatured": false,
+      "likes": 0
+    },
+    {
+      "id": "7",
+      "title": "Velvet Ruby",
+      "description": "Rich red velvet cupcakes topped with a smooth cream cheese frosting.",
+      "category": "Cupcakes",
+      "price": 36,
+      "image": "https://www.themealdb.com/images/media/meals/ldnrm91576791881.jpg",
+      "flavor": "Vanilla",
+      "rating": 4.5,
+      "altText": "Birthday Cake with Vanilla Bean Cloud",
+      "isFeatured": false,
+      "likes": 0
+    },
+    {
+      "id": "8",
+      "title": "Autumn Spice",
+      "description": "Warm spiced pumpkin cake with maple cream cheese frosting and cinnamon.",
+      "category": "Wedding",
+      "price": 30,
+      "image": "https://www.themealdb.com/images/media/meals/tzt3it1764363293.jpg",
+      "flavor": "Vanilla",
+      "rating": 4.5,
+      "altText": "Wedding Cake with Vanilla Bean Cloud",
+      "isFeatured": false,
+      "likes": 0
+    },
+    {
+      "id": "9",
+      "title": "Rustic Floral",
+      "description": "Semi-naked design adorned with fresh wildflowers and a touch of honey",
+      "category": "Birthday",
+      "price": 60,
+      "image": "https://www.themealdb.com/images/media/meals/xvgpng1764121726.jpg",
+      "flavor": "Chocolate",
+      "rating": 4.5,
+      "altText": "Birthday Cake with Chocolate",
+      "isFeatured": false,
+      "likes": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "SmevpKRmFk4",
+      "cakeId": "3",
+      "cakeTitle": "Cake 3",
+      "quantity": 1,
+      "name": "manali",
+      "email": "manali@gmail.com",
+      "status": "confirmed"
+    }
+  ],
+  "users": [
+    {
+      "id": "user1",
+      "name": "Manali",
+      "email": "manali@test.com",
+      "preferences": {
+        "theme": "light"
+      }
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
